@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js">
-    <link rel="stylesheet" href="/goit-js-hw-09/assets/styles-ee18fc1f.css">
+    <link rel="stylesheet" href="/goit-js-hw-09/assets/2-form-0306df1e.css">
   </head>
   <body>
     <nav>
@@ -16,6 +22,28 @@
         <li><a href="./index.html">Go to home</a></li>
       </ul>
     </nav>
+    <form class="feedback-form" autocomplete="off">
+      <label class="feedback-form-label">
+        Email
+        <input
+          type="email"
+          name="email"
+          autofocus
+          class="feedback-form-input"
+          placeholder="Input email"
+        />
+      </label>
+      <label class="feedback-form-label">
+        Message
+        <textarea
+          name="message"
+          rows="8"
+          class="feedback-form-textarea"
+          placeholder="Input message"
+        ></textarea>
+      </label>
+      <button type="submit" class="feedback-form-btn">Submit</button>
+    </form>
     
   </body>
 </html>
